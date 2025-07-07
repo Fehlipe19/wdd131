@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #417B5A;
+    --secondary-color: #CCA43B;
+    --text-color: #fffffa;
+    --accent-color: #1F2041;
+    --heading-font: 'Arial', sans-serif;
+    --body-text-font: 'Verdana', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    background-color: var(--primary-color);
+}
+
+#course-title {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* width: 100%; */
+    background-color: var(--primary-color);
+    padding: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 8px;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin: 20px 8px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 2px solid var(--secondary-color);
+    border-radius: 16px;
+    width: 90%;
+    /* padding: 8px; */
+}
+
+h2 {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    text-align: center;
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 8px;
+    border-radius: 16px 16px 0 0;;
+}
+
+.card > div {
+    display: flex;
+    margin: 0 8px;
+    align-items: center;
+}
+
+img {
+    max-width: 200px;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    /* margin: 8px 0; */
+    width: 100%;
+}
