@@ -118,7 +118,8 @@ img {
     max-width: 200px;
 }
 
-h3 {
+#state-title {
+    background-color: transparent;
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
