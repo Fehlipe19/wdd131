@@ -50,14 +50,45 @@ nav {
 }
 
 #ham-menu {
+    height: 50px;
+    width: 50px;
     cursor: pointer;
+    position: relative;
+    margin-right: 32px;
 }
 
-.fa-bars {
-    padding: 8px;
-    z-index: 100;
-    font-size: 2rem;
-    color: var(--text-color);
+#ham-menu span {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+#ham-menu span:nth-child(1) {
+    top: 15%;
+}
+
+#ham-menu span:nth-child(3) {
+    top: 85%;
+}
+
+#ham-menu.active span:nth-child(1) {
+    top: 55%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#ham-menu.active span:nth-child(3) {
+    top: 45%;
+    transform: translate(-50%, 50%) rotate(-45deg);
 }
 
 .open {

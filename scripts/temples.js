@@ -15,11 +15,5 @@ const navList = document.querySelector('ul');
 
 menuButton.addEventListener('click', () => {
     navList.classList.toggle('open');
-    
-    console.log('Menu button clicked');
-    // if (menuButton.classList.contains('open')) {
-    //     document.querySelector('#mobile-nav').style.display = 'flex';
-    // } else {
-    //     document.querySelector('#mobile-nav').style.display = 'none';
-    // }
+    menuButton.classList.toggle('active');
 });
