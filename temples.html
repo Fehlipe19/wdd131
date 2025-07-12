@@ -8,7 +8,8 @@
     <meta name="author" content="Felipe Menezes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
@@ -16,15 +17,21 @@
 </head>
 <body>
     <header>
-        <span id="brand-name">Temple Album</span>
+        <div class="mobile-header">
+            <span id="brand-name">Temple Album</span>
+            <div id="ham-menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
         <nav>
-            <ul>
+            <ul id="mobile-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
                 <li><a href="#">Large</a></li>
                 <li><a href="#">Small</a></li>
             </ul>
+        </nav>
     </header>
     <main>
         <h1>Home</h1>
