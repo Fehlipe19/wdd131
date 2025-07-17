@@ -19,9 +19,32 @@
         <div class="hero">
             <picture>
                 <source media="(min-width: 1000px)" srcset="images/large-australia.webp">
-                <img src="images/small-australia.webp" alt="Australia" width="1500" height="750">
+                <img src="images/small-australia.webp" alt="Australian kangaroo" width="1220" height="750">
             </picture>
         </div>
+        <section class="data">
+            <h2>Data</h2>
+            <p><span class="label">Area: </span>7,688,287km<sup>2</sup></p>
+            <p><span class="label">Population: </span>27,933,400</p>
+            <p><span class="label">Capital: </span>Canberra</p>
+            <p><span class="label">Languages: </span>English</p>
+            <p><span class="label">Currency: </span>Australian Dollar</p>
+            <p><span class="label">Time Zone: </span>UTC+8; +9.5; +10</p>
+            <p><span class="label">Calling Code: </span>+61</p>
+            <p><span class="label">Internet TLD: </span>.au</p>
+        </section>
+        <section>
+            <h2>Weather</h2>
+
+            <p><span class="label">Temperature: </span><span id="temp">22 &deg;C</span></p>
+            <p><span class="label">Conditions: </span><span id="conditions">Cloudy</span></p>
+            <p><span class="label">Wind: </span><span id="wind-speed"></span></p>
+            <p><span class="label">Wind Chill: </span><span id="windchill"></span></p>
+        </section>
     </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Felipe Menezes | Florida</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
