@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Picture Album | Week 02 Assignment</title>
-    <meta name="description" content="Design Assignment for WDD 131 - Dynamic Web Fundamentals. This page demonstrates the use of design principles to improve a web site's effectiveness">
+    <title> Responsive Image | Week 03 Assignment</title>
+    <meta name="description" content="Responsive Image Assignment for WDD 131 - Dynamic Web Fundamentals. This page demonstrates the use of resposive images to improve a web site's effectiveness">
     <meta name="author" content="Felipe Menezes">
-    <link rel="stylesheet" href="styles/design.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 <body>
-    
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Fort Lauderdale Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
 </body>
 </html>
