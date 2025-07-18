@@ -105,6 +105,22 @@ footer {
     section {
         z-index: 1;
         background-color: rgba(0, 0, 139, 0.5);
-        
+        width: 28%;
+    }
+    
+    #weather-icon {
+        display: none;
+    }
+
+    #icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #icon:after {
+        content: attr(data-icon);
+        font-size: 1.5rem;;
     }
 }
