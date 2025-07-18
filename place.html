@@ -6,6 +6,9 @@
     <title> Country Page | Week 03 Assignment</title>
     <meta name="description" content="Country Page for WDD 131 - Dynamic Web Fundamentals. This page demonstrates a dynamic summary of a country's weather">
     <meta name="author" content="Felipe Menezes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/getdates.js" defer></script>
@@ -19,6 +22,7 @@
         <div class="hero">
             <picture>
                 <source media="(min-width: 1000px)" srcset="images/large-australia.webp">
+                <source media="(min-width: 515px)" srcset="images/medium-australia.webp">
                 <img src="images/small-australia.webp" alt="Australian kangaroo" width="1220" height="750">
             </picture>
         </div>
@@ -35,7 +39,7 @@
         </section>
         <section>
             <h2>Weather</h2>
-
+            <img src="images/weather-icon.svg" alt="Weather icon" id="weather-icon">
             <p><span class="label">Temperature: </span><span id="temp">22 &deg;C</span></p>
             <p><span class="label">Conditions: </span><span id="conditions">Cloudy</span></p>
             <p><span class="label">Wind: </span><span id="wind-speed"></span></p>

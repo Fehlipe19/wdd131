@@ -1,0 +1,67 @@
+:root{
+    --primary-color: #00008B;
+    --secondary-color: #FF0000;
+    --text-color: #FFFFFF;
+    --header-font: 'Special Elite', cursive;
+    font-family: 'Baloo 2', cursive;
+}
+
+html {
+    font-size: 120%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 8px;
+    border-bottom: 32px solid var(--secondary-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: 16px solid var(--secondary-color);
+}
+
+h1 {
+    margin: 16px 0;
+    text-align: center;
+    font-family: var(--header-font);
+    color: var(--text-color);
+}
+
+section {
+    border: 4px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+#weather-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+footer {
+    border-top: 32px solid var(--secondary-color);
+    width: 100%;
+}
