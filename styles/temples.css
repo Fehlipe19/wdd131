@@ -148,6 +148,16 @@ figure {
     margin: 16px 0;
 }
 
+footer > a {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    color:#FFFFFF;
+}
+
+a:hover {
+    background-color: var(--secondary-color);
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
