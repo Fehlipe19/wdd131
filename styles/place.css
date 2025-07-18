@@ -24,6 +24,21 @@ body {
     color: var(--text-color);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     background-color: var(--primary-color);
     width: 100%;
@@ -37,6 +52,7 @@ header {
     border-bottom: 16px solid var(--secondary-color);
 }
 
+
 h1 {
     margin: 16px 0;
     text-align: center;
@@ -44,11 +60,17 @@ h1 {
     color: var(--text-color);
 }
 
+h2 {
+    margin: 8px 0;
+    font-family: var(--header-font);    
+}
+
 section {
     border: 4px solid var(--secondary-color);
     border-radius: 8px;
     padding: 16px;
     margin: 16px;
+    min-width: 300px;
 }
 
 .label {
@@ -64,4 +86,25 @@ section {
 footer {
     border-top: 32px solid var(--secondary-color);
     width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .data {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+    }
+
+    section {
+        z-index: 1;
+        background-color: rgba(0, 0, 139, 0.5);
+        
+    }
 }
