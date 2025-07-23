@@ -67,21 +67,21 @@ const temples = [
   {
     templeName: "Fort Lauderdale Florida",
     location: "Fort Lauderdale, Florida, United States",
-    dedication: "2014, May, 4",
+    dedicated: "2014, May, 4",
     area: 30500,
     imageUrl: "https://www.churchofjesuschrist.org/imgs/a3969831f6ee2fb8dd6d29c099d0ff8d1c8a65b8/full/1920%2C/0/default"
   },
   {
     templeName: "Sao Paulo Brazil",
     location: "Sao Paulo, Brazil",
-    dedication: "1978, October, 30",
+    dedicated: "1978, October, 30",
     area: 59246,
     imageUrl: "https://www.churchofjesuschrist.org/imgs/249d5717cea3f67ba627819a9616a53f591fc9d7/full/1920%2C/0/default"
   },
   {
     templeName: "Provo City Center Utah",
     location: "Provo, Utah, United States",
-    dedication: "2016, March, 20",
+    dedicated: "2016, March, 20",
     area: 4547,
     imageUrl: "https://www.churchofjesuschrist.org/imgs/ff8c7df0c3ca5323549b8f87790ec42c0ce18662/full/1920%2C/0/default"
   }
@@ -98,5 +98,29 @@ temples.forEach(temple => {
     <p><span>Size: </span>${temple.area} sq ft</p>
     <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}">
     `;
+    const templeDateList = temple.dedicated.split(",");
+    const yearNumber = parseInt(templeDateList[0]);
+    temple.dedicated = yearNumber;
     document.querySelector('.card-container').appendChild(templeCard);
 });
+
+const oldButton = document.querySelector("#old");
+const newButton = document.querySelector("#new");
+const largeButton = document.querySelector("#large");
+const smallButton = document.querySelector("#small");
+
+//Check for year
+const thresholdOld = 1900;
+const thresholdNew = 2000;
+
+oldButton.addEventListener("click", () => {
+    var oldTemples = temples.filter(temple => temple.dedicated < thresholdOld);
+    console.log(oldTemples);
+});
+
+newButton.addEventListener("click", () => {
+    var newTemples = temples.filter(temple => temple.dedicated > thresholdNew);
+    console.log(newTemples);
+});
+
+//Add functionality for small and large temple filters
