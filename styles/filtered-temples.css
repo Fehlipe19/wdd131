@@ -188,10 +188,6 @@ footer > a {
     color:#FFFFFF;
 }
 
-/* a:hover {
-    background-color: var(--secondary-color);
-} */
-
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
