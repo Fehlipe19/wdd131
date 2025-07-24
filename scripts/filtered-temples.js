@@ -86,8 +86,11 @@ const temples = [
     imageUrl: "https://www.churchofjesuschrist.org/imgs/ff8c7df0c3ca5323549b8f87790ec42c0ce18662/full/1920%2C/0/default"
   }
 ];
+createTempleCard(temples);
 
-temples.forEach(temple => {
+function createTempleCard (filteredTemples) {
+  
+  filteredTemples.forEach(temple => {
     const templeCard = document.createElement('div');
     templeCard.classList.add('temple-card');
     
@@ -98,12 +101,17 @@ temples.forEach(temple => {
     <p><span>Size: </span>${temple.area} sq ft</p>
     <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}">
     `;
-    const templeDateList = temple.dedicated.split(",");
-    const yearNumber = parseInt(templeDateList[0]);
-    temple.dedicated = yearNumber;
-    document.querySelector('.card-container').appendChild(templeCard);
-});
 
+    if (typeof temple.dedicated === 'string') {
+      const templeDateList = temple.dedicated.split(",");
+      const yearNumber = parseInt(templeDateList[0]);
+      temple.dedicated = yearNumber;
+    }
+    document.querySelector('.card-container').appendChild(templeCard);
+  });
+}
+
+const homeButton = document.querySelector("#home");
 const oldButton = document.querySelector("#old");
 const newButton = document.querySelector("#new");
 const largeButton = document.querySelector("#large");
@@ -112,15 +120,29 @@ const smallButton = document.querySelector("#small");
 //Check for year
 const thresholdOld = 1900;
 const thresholdNew = 2000;
+const container = document.querySelector(".card-container");
 
 oldButton.addEventListener("click", () => {
-    var oldTemples = temples.filter(temple => temple.dedicated < thresholdOld);
-    console.log(oldTemples);
+  container.innerHTML = '';
+  createTempleCard(temples.filter(temple => temple.dedicated < thresholdOld));
 });
 
 newButton.addEventListener("click", () => {
-    var newTemples = temples.filter(temple => temple.dedicated > thresholdNew);
-    console.log(newTemples);
+  container.innerHTML = '';
+  createTempleCard(temples.filter(temple => temple.dedicated > thresholdNew));
 });
 
-//Add functionality for small and large temple filters
+largeButton.addEventListener("click", () => {
+  container.innerHTML = '';
+  createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+smallButton.addEventListener("click", () => {
+  container.innerHTML = '';
+  createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+homeButton.addEventListener("click", () => {
+  container.innerHTML = '';
+  createTempleCard(temples);
+});
