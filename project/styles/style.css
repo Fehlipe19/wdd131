@@ -1,36 +1,36 @@
 #square1 {
-   background-color: #08080c;
-   height: 100px;
-   width: 100px;
+  background-color: #08080c;
+  height: 100px;
+  width: 100px;
 }
 #square2 {
-   background-color: #942911;
-   height: 100px;
-   width: 100px;
+  background-color: #942911;
+  height: 100px;
+  width: 100px;
 }
 #square3 {
-   background-color: #edf2f4;
-   height: 100px;
-   width: 100px;
+  background-color: #edf2f4;
+  height: 100px;
+  width: 100px;
 }
 #square4 {
-   background-color: #e9ce2c;
-   height: 100px;
-   width: 100px;
+  background-color: #e9ce2c;
+  height: 100px;
+  width: 100px;
 }
 #square5 {
-   background-color: #d80032;
-   height: 100px;
-   width: 100px;
+  background-color: #d80032;
+  height: 100px;
+  width: 100px;
 }
 .color-list > li {
-   list-style: none;
+  list-style: none;
 }
 .heading {
-   font-family: Macondo, serif;
-   font-size: 2rem;
+  font-family: Macondo, serif;
+  font-size: 2rem;
 }
 .body-text {
-   font-family: "Baloo 2", sans-serif;
-   font-size: 2rem;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 2rem;
 }
