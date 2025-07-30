@@ -2,7 +2,7 @@
   --primary-color: #417b5a;
   --secondary-color: #fdcd52;
   --text-color: #fffffa;
-  --accent-color: #1f2041;
+  --accent-color: #b5ca8d;
   --heading-font: "Arvo", serif;
   --body-text-font: "Baloo 2", sans-serif;
 }
@@ -24,6 +24,32 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: var(--secondary-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 16px;
+  padding: 8px;
+  background-color: var(--accent-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+}
+
+.vertical > label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
