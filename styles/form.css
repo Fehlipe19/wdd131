@@ -7,7 +7,12 @@
   --body-text-font: "Baloo 2", sans-serif;
 }
 
+html {
+  font-size: 1.2rem;
+}
+
 * {
+  font-family: var(--body-text-font);
   margin: 0;
   padding: 0;
 }
@@ -41,15 +46,48 @@ form {
   flex-direction: column;
 }
 
+input,
+textarea,
+select {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+}
+
 fieldset {
   border: none;
+}
+
+.vert,
+fieldset {
+  margin: 12px 0;
+}
+.vertical {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .vertical > label {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.vert {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+label > span {
+  color: blue;
+  font-size: 0.7rem;
 }
 
 footer {
