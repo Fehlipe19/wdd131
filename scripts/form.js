@@ -28,6 +28,7 @@ const products = [
 
 const dropdown = document.getElementById("product-name");
 
+//Dynamically add options to form selection
 products.forEach((product) => {
   const selection = document.createElement("option");
   selection.setAttribute("value", product.id);
