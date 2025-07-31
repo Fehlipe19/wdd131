@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filtered Picture Album | Week 04 Project</title>
+    <title>Product Review | Week 05 Project</title>
     <meta
       name="description"
       content="Product Review Form Assignment for WDD 131 - Dynamic Web Fundamentals. This page demonstrates the use of forms and local storage on a web page." />
@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+2:wght@400..800&display=swap"
       rel="stylesheet" />
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
   </head>
   <body>
     <header>
@@ -52,6 +53,7 @@
         <label class="vert">
           Your Name: <span class="optional">(Optional)</span><input type="text" id="username" name="username" />
         </label>
+        <input type="hidden" name="from_product_review" value="form_submitted" />
         <input type="submit" value="Post Review" />
       </form>
     </main>
