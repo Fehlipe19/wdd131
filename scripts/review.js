@@ -6,9 +6,11 @@ console.log(currentURL.includes(searchSubmission));
 
 document.addEventListener("DOMContentLoaded", () => {
   if (currentURL.includes(searchSubmission)) {
-    let counter = parseInt(localStorage.getItem("completed-reviews" || "0"));
+    let counter = parseInt(localStorage.getItem("completed-reviews") || "0", 10);
+    console.log(counter);
     counter++;
-    localStorage.setItem("completed-reviews", counter);
+    let counter_string = counter.toString();
+    localStorage.setItem("completed-reviews", counter_string);
     message.innerText = "Review Submitted!";
   } else {
     message.innerText = "No review made.";
