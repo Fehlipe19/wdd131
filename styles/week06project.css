@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #08080c;
+  --secondary-color: #d80032;
+  --light-text: #edf2f4;
+  --link-color: #e9ce2c;
+  --accent-color: #942911;
+  --heading-font: Macondo;
+  --text-font: "Baloo 2", sans-serif;
+}
+
+* {
+  font-family: var(--text-font);
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+a,
+a:visited {
+  color: var(--link-color);
+}
