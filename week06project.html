@@ -9,6 +9,7 @@
       content="Dungeons and Dragons Project page for WDD 131 - Dynamic Web Fundamentals. This page utilizes all lessons from this class to build a responsive webpage." />
     <meta name="author" content="Felipe Menezes" />
     <link rel="stylesheet" href="styles/week06project.css" />
+    <link rel="stylesheet" href="styles/week06project-large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,9 +20,19 @@
   </head>
   <body>
     <header>
+      <div class="mobile-header">
+        <span id="brand-name">DnD MeetUp</span>
+        <div id="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <nav>
-        <ul>
-          <li>Portugal</li>
+        <ul id="mobile-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Character</a></li>
+          <li><a href="#">Locations</a></li>
         </ul>
       </nav>
     </header>

@@ -8,18 +8,125 @@
   --text-font: "Baloo 2", sans-serif;
 }
 
+html {
+  font-size: 1.2rem;
+}
+
 * {
+  margin: 0;
+  padding: 0;
   font-family: var(--text-font);
 }
 
 header,
 footer {
+  padding: 16px;
   background-color: var(--primary-color);
   color: var(--light-text);
 }
 
+header {
+  border-bottom: 16px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+  border-top: 16px solid var(--secondary-color);
+  width: 100%;
+}
+
+/* nav {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+} */
+
+.mobile-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ham-menu {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 32px;
+}
+
+#ham-menu span {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: var(--link-color);
+  border-radius: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+#ham-menu span:nth-child(1) {
+  top: 15%;
+}
+
+#ham-menu span:nth-child(3) {
+  top: 85%;
+}
+
+#ham-menu.active span:nth-child(1) {
+  top: 55%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#ham-menu.active span:nth-child(3) {
+  top: 45%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  display: none;
+  justify-content: space-between;
+  /* margin-top: 16px; */
+  border-top: 4px solid var(--link-color);
+  border-bottom: 4px solid var(--link-color);
+  padding: 4px;
+}
+
+#brand-name,
 h1 {
   font-family: var(--heading-font);
+  font-size: 1.5rem;
+}
+
+#brand-name {
+  color: var(--link-color);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--link-color);
 }
 
 a:hover {
@@ -29,4 +136,8 @@ a:hover {
 a,
 a:visited {
   color: var(--link-color);
+}
+
+.hidden {
+  display: none;
 }
