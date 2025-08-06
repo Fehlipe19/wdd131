@@ -183,6 +183,8 @@ a:visited {
 .dice-container > h2 {
   position: absolute;
   top: 30%;
+  text-shadow: 0 0 2px var(--secondary-color);
+  /* border: 2px solid var(--secondary-color); */
   /* right: 50%; */
 }
 
