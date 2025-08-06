@@ -18,6 +18,10 @@
     gap: 16px;
   }
 
+  footer {
+    margin-top: 8%;
+  }
+
   nav {
     width: 65%;
     max-width: 700px;

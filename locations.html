@@ -36,6 +36,42 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <form action="review.html" method="get">
+        <label class="vert">
+          Product Name
+          <select id="product-name" name="product" required>
+            <option value="" disabled selected>Select a Product...</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Overall Rating</legend>
+          <div class="vertical">
+            <label>☆<input type="radio" id="rating1" name="rating" value="1" /></label>
+            <label>☆☆<input type="radio" id="rating2" name="rating" value="2" /></label>
+            <label>☆☆☆<input type="radio" id="rating3" name="rating" value="3" /></label>
+            <label>☆☆☆☆<input type="radio" id="rating4" name="rating" value="4" /></label>
+            <label>☆☆☆☆☆<input type="radio" id="rating5" name="rating" value="5" /></label>
+          </div>
+        </fieldset>
+        <label class="vert">Date of Installation: <input type="date" id="date-installed" name="date" required /></label>
+        <fieldset class="vert">
+          Which features did you find useful in the product? <i>(Check all that apply)</i>
+          <label> <input type="checkbox" id="features-dur" name="features" value="durability" /> Durability </label>
+          <label> <input type="checkbox" id="features-ease" name="features" value="ease" /> Ease-of-use </label>
+          <label> <input type="checkbox" id="features-perf" name="features" value="performance" /> Performance </label>
+          <label> <input type="checkbox" id="features-des" name="features" value="design" /> Design </label>
+        </fieldset>
+        <label class="vert">
+          Written Review: <span class="optional">(Optional)</span><textarea id="review" name="review"></textarea>
+        </label>
+        <label class="vert">
+          Your Name: <span class="optional">(Optional)</span><input type="text" id="username" name="username" />
+        </label>
+        <input type="hidden" name="from_product_review" value="form_submitted" />
+        <input type="submit" value="Post Review" />
+      </form>
+    </main>
     <footer>
       <p>&copy;<span id="currentYear"></span> | Felipe Menezes | Florida</p>
       <p id="lastModified"></p>
