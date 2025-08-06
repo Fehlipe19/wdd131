@@ -35,7 +35,7 @@ header {
   width: 100%;
 }
 .main-container {
-  max-width: 600px;
+  max-width: 1000px;
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -175,7 +175,7 @@ a:visited {
   display: flex;
   justify-content: center;
   position: relative;
-  max-width: 350px;
+  max-width: 400px;
   border: 8px solid var(--accent-color);
 }
 
