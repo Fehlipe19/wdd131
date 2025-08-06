@@ -74,7 +74,41 @@ main {
   border-radius: 16px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid var(--accent-color);
+  border-radius: 16px;
+  padding: 8px;
+  margin-top: 16px;
+  background-color: var(--secondary-color);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 0 0;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+}
+
+input[type="submit"] {
+  margin: 8px 0 8px 0;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  color: var(--link-color);
+  border: 4px solid var(--link-color);
+}
+
 footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border-top: 16px solid var(--secondary-color);
   width: 100%;
 }
