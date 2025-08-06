@@ -11,6 +11,13 @@
     width: 30%;
   }
 
+  .card-container {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+
   nav {
     width: 65%;
     max-width: 700px;

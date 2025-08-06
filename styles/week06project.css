@@ -56,6 +56,24 @@ main {
   z-index: -1;
 }
 
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 4px solid var(--accent-color);
+  border-radius: 16px;
+  max-width: 200px;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.character-card > img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
 footer {
   border-top: 16px solid var(--secondary-color);
   width: 100%;
@@ -64,7 +82,6 @@ footer {
 .mobile-header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
