@@ -40,10 +40,10 @@
     <main>
       <h1>MeetUp Locations</h1>
       <form action="locationsResponse.html" method="get">
-        <label class="vert"> Your Name: <input type="text" id="username" name="username" /> </label>
-        <label class="vert"> Email: <input type="email" id="email" name="email" /> </label>
-        <label class="vert"> State: <input type="text" id="state" name="state" /> </label>
-        <label class="vert"> City: <input type="text" id="city" name="city" /> </label>
+        <label class="vert"> Your Name: <input required type="text" id="username" name="username" /> </label>
+        <label class="vert"> Email: <input required type="email" id="email" name="email" /> </label>
+        <label class="vert"> State: <input required type="text" id="state" name="state" /> </label>
+        <label class="vert"> City: <input required type="text" id="city" name="city" /> </label>
         <label class="vert">
           About me:
           <textarea
@@ -57,6 +57,7 @@
         <input type="hidden" name="from_locations" value="form_submitted" />
         <input type="submit" value="Find your group" />
       </form>
+      <p>This form will save how many cities you've submitted on localStorage in your browser.</p>
     </main>
     <footer>
       <p>&copy;<span id="currentYear"></span> | Felipe Menezes | Florida</p>

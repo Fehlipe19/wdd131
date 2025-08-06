@@ -5,7 +5,7 @@ console.log(currentURL.includes(searchSubmission));
 
 document.addEventListener("DOMContentLoaded", () => {
   if (currentURL.includes(searchSubmission)) {
-    let counter = parseInt(localStorage.getItem("loations-submitted") || "0", 10);
+    let counter = parseInt(localStorage.getItem("locations-submitted") || "0", 10);
     console.log(counter);
     counter++;
     let counter_string = counter.toString();
